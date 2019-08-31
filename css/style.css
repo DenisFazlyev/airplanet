@@ -1,0 +1,61 @@
+body {
+    font-family: 'Roboto', arial, sans-serif
+}
+
+.container {
+    margin: 0 auto; /* Отступ, растягивание на всю ширину */
+    width: 1058px;
+}
+
+.logo, .contacts {
+    display: inline-block; /* Выравнивает блоки в линию */
+}
+
+.contacts__phone {
+    font-weight: bold;
+    font-size: 21px;
+    color: #ffffff;
+    text-decoration: none; /* Убирает подчеркивание ссылки */
+}
+ 
+.contacts__desc {
+    color: rgba(255, 255, 255, .7);
+    font-weight: bold;
+    font-size: 14px;
+}
+.header {
+    height: 77px; /*  Ширина и цвет заливки шапки */
+    background: #4b73b5; 
+}
+
+.desc__img {
+    width: 1214px;
+    height: 312px;
+    background: url('../img/pic/Photo.png') right 13px no-repeat #cccccc; 
+}
+
+.latest-news__foto {    /* Изменяет форму картинки */
+    overflow: hidden;
+    border-radius: 50%;
+    width: 160px;
+    height: 160px;
+    display: inline-block;
+}
+
+.latest-news__text {    
+    display: inline-block;  /* Блок переносит на одну линию */
+    width: 664px;
+    height: 164px;
+}
+
+.latest-news__list {
+    list-style: none;   /* Убирает точки у списка */
+}
+
+.latest-news__item { 
+    border-bottom: 1px solid black; /* Для установки нижнего бордера */
+}
+
+.latest-news__item:last-child { /* Для отключения последнего у родителя */
+    border-bottom: none; /* или же initian - для установки по уполчанию */
+}
