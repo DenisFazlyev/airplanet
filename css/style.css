@@ -1,14 +1,26 @@
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+
 body {
     font-family: 'Roboto', arial, sans-serif
 }
 
 .container {
     margin: 0 auto; /* Отступ, растягивание на всю ширину */
-    width: 1058px;
+    width: 1080px;
 }
 
 .logo, .contacts {
     display: inline-block; /* Выравнивает блоки в линию */
+}
+
+.logo {
+    margin-left: 20px;
 }
 
 .contacts__phone {
@@ -23,16 +35,48 @@ body {
     font-weight: bold;
     font-size: 14px;
 }
+
 .header {
-    height: 77px; /*  Ширина и цвет заливки шапки */
+    height: 77px;   /*  Ширина и цвет заливки шапки */
     background: #4b73b5; 
+    position: relative;
+}
+
+.header__left, .header__right {
+    float: left;
+    width: 50%;
+    padding-top: 20px;
+}
+
+.header__right {
+    text-align: right;
 }
 
 .desc__img {
-    width: 1214px;
-    height: 312px;
-    background: url('../img/pic/Photo.png') right 13px no-repeat #cccccc; 
+    width: 900px;
+    height: 299px;
+    /*  background: url('../img/pic/Photo.png') right 13px no-repeat #cccccc; */
+    background-image: url('../img/pic/Photo.png');
+    background-repeat: no-repeat;
+    position: relative;
 }
+
+/*
+.desc__text {
+    position: absolute;
+    top: 65px;
+    left: 65px;
+}   */
+
+ .content {
+     float: right;
+     width: 900px;
+ }
+
+ .nav {
+    float: left;
+    width: 180px;
+ }
 
 .latest-news__foto {    /* Изменяет форму картинки */
     overflow: hidden;

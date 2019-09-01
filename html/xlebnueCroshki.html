@@ -1,8 +1,56 @@
-<ul class="breadcrumbs"> <!-- Хлебные крошки -->
-    <li class="breadcrumbs__item">
-        <a href="#" class="breadcrumbs__item-link">Главная</a>
-    </li>
-    <li class="breadcrumbs__item">
-            <a href="#" class="breadcrumbs__item-link">Не Главная</a>
-    </li>
-</ul>
+<!-- Хлебные крошки -->
+<ul class="breadcrumbs"> 
+                <li class="breadcrumbs__item">
+                    <a href="#" class="breadcrumbs__item-link">Главная</a>
+                </li>
+                <li class="breadcrumbs__item">
+                        <a href="#" class="breadcrumbs__item-link">Не Главная</a>
+                </li>
+                <li class="breadcrumbs__item">
+                        <a href="#" class="breadcrumbs__item-link breadcrumbs__item-link--active">Еще крошка..</a>
+                </li>
+            </ul>
+        
+
+            /*  Хлебные крошки  */
+ul {        /*  Сброс стилей списка */
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.breadcrumbs {
+    margin-bottom: 28px;
+    margin-top: 46px;
+}
+
+.breadcrumbs__item {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.breadcrumbs__item::after {
+    content: "/";
+    display: inline-block; 
+    color: #221f1f;
+    opacity: .8;
+}
+
+.breadcrumbs__item:last-child:after {
+    display: none;
+}
+
+.breadcrumbs__item-link {
+    font-size: 14px;
+    font-weight: 300;
+    font-style: italic;
+    color: #1c5bc3;
+    opacity: .8;
+}
+ 
+.breadcrumbs__item-link--active {
+    color: #221f1f;
+    text-decoration: none;
+}
+
+/*  Хлебные крошки  */
