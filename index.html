@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,700&display=swap&subset=cyrillic"
         rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
+    <!--Обнуление всех стилей браузера-->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -18,6 +19,7 @@
     <div class="wrapper">
         <div class="header">
             <div class="container clearfix">
+                <!--Это свойство clearfix добавили потому что применяются в родителе блоки с float -->
                 <div class="header__left">
                     <a href="#" class="logo-link">
                         <img src="./img/logo/logo.png" alt="campy logo" class="logo">
@@ -37,21 +39,21 @@
                 <div class="nav">
                     <ul class="nav__list">
                         <li class="nav__item">
-                            <a href="#" class="nav__link">
-                                <div class="nav_icon"></div>
-                                <div class="nav_text">Главная</div>
+                            <a href="#" class="nav__link-active">
+                                <div class="nav__icon-main"></div>
+                                <div class="nav__text">Главная</div>
                             </a>
                         </li>
                         <li class="nav__item">
                             <a href="#" class="nav__link">
-                                <div class="nav_icon"></div>
-                                <div class="nav_text">Отзывы</div>
+                                <div class="nav__icon-feed"></div>
+                                <div class="nav__text">Отзывы</div>
                             </a>
                         </li>
                         <li class="nav__item">
                             <a href="#" class="nav__link">
-                                <div class="nav_icon"></div>
-                                <div class="nav_text">Экипаж</div>
+                                <div class="nav__icon-team"></div>
+                                <div class="nav__text">Экипаж</div>
                             </a>
                         </li>
                     </ul>
@@ -60,63 +62,91 @@
 
                     <div class="desc">
                         <div class="desc__img"></div>
-                        <div class="desc__text"></div>
+                        <div class="desc__text"></div> <!--    На случай если есть текст на картинке   -->
                     </div>
                     <div class="latest-news">
                         <h1 class="title">Последние новости</h1>
                         <ul class="latest-news__list">
-                            <li class="latest-news__item">
-                                <div class="latest-news__foto">
-                                    <img src="./img//news/planeflying.jpg" alt="" class="latest-news__foto-pic">
+                            <li class="latest-news__item clearfix">
+                                <div class="latest-news__item-wrap">
+                                    <div class="latest-news__foto">
+                                        <img src="./img//news/planeflying.png" alt="" class="latest-news__foto-pic">
+                                    </div>
+                                    <div class="latest-news__text">
+                                        <div class="latest-news__date">12.10.2016</div>
+                                        <div class="latest-news__h3">Ночные перелёты дешевле!</div>
+                                        <div class="latest-news__content">
+                                            Летящий в ночном небе самолет — зрелище загадочное и романтическое. Крылатая машина
+                                            величественно плывет в вышине, мерцая разноцветными огнями, и почему-то кажется,
+                                            что она наполнена удивительными людьми, спешащими далеко-далеко по очень важным делам.
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="latest-news__text">
-                                    <div class="latest-news__date">12.10.2016</div>
-                                    <div class="latest-news__h3">Ночные перелёты дешевле!</div>
-                                    <div class="latest-news__content">
-                                        Летящий в ночном небе самолет — зрелище загадочное и романтическое. Крылатая
-                                        машина
-                                        величественно плывет в вышине, мерцая разноцветными огнями, и почему-то кажется,
-                                        что
-                                        она
-                                        наполнена удивительными людьми, спешащими далеко-далеко по очень важным делам.
+                                
+                            </li>
+                            <li class="latest-news__item clearfix">
+                                <div class="latest-news__item-wrap">
+                                    <div class="latest-news__foto">
+                                        <img src="./img//news/Photo.png" alt="" class="latest-news__foto-pic">
+                                    </div>
+                                    <div class="latest-news__text">
+                                        <div class="latest-news__date">01.02.2016</div>
+                                        <div class="latest-news__h3">Путешествие в Грузию стало доступнее</div>
+                                        <div class="latest-news__content">
+                                            Экскурсии по Грузии в 2017 году от русских гидов: самые интересные маршруты в
+                                            Грузии от профессиональных гидов. Обзорные, пешеходные, автомобильные, тематические
+                                            экскурсии по интересным городам и курортам Грузии. Не пропустите такую возможность!
+                                        </div>
                                     </div>
                                 </div>
                             </li>
-                            <li class="latest-news__item">
-                                <div class="latest-news__foto">
-                                    <img src="./img//news/Photo.jpg" alt="" class="latest-news__foto-pic">
-                                </div>
-                                <div class="latest-news__text">
-                                    <div class="latest-news__date">01.02.2016</div>
-                                    <div class="latest-news__h3">Путешествие в Грузию стало доступнее</div>
-                                    <div class="latest-news__content">
-                                        Экскурсии по Грузии в 2017 году от русских гидов: самые интересные маршруты в
-                                        Грузии
-                                        от
-                                        профессиональных гидов. Обзорные, пешеходные, автомобильные, тематические
-                                        экскурсии
-                                        по
-                                        интересным городам и курортам Грузии. Не пропустите такую возможность!
+                            <li class="latest-news__item clearfix">
+                                <div class="latest-news__item-wrap">
+                                    <div class="latest-news__foto">
+                                        <img src="./img//news/Layer_5.jpg" alt="" class="latest-news__foto-pic">
                                     </div>
-                                </div>
-                            </li>
-                            <li class="latest-news__item">
-                                <div class="latest-news__foto">
-                                    <img src="./img//news/Layer_5.jpg" alt="" class="latest-news__foto-pic">
-                                </div>
-                                <div class="latest-news__text">
-                                    <div class="latest-news__date">22.12.2015</div>
-                                    <div class="latest-news__h3">Детские авиабилеты доступны для бизнес-класса</div>
-                                    <div class="latest-news__content">
-                                        Путешествие на самолете с детьми - небольшое испытание для родителей.
-                                        Но это не экстремальное приключение, а обычный цивилизованный поход.
-                                        Тем более, различные авиакомпании стараются помочь скидками на детские
-                                        авиабилеты,
-                                        специальным питанием и другими услугами на борту лайнера.
+                                    <div class="latest-news__text">
+                                        <div class="latest-news__date">22.12.2015</div>
+                                        <div class="latest-news__h3">Детские авиабилеты доступны для бизнес-класса</div>
+                                        <div class="latest-news__content">
+                                            Путешествие на самолете с детьми - небольшое испытание для родителей.
+                                            Но это не экстремальное приключение, а обычный цивилизованный поход.
+                                            Тем более, различные авиакомпании стараются помочь скидками на детские
+                                            авиабилеты, специальным питанием и другими услугами на борту лайнера.
+                                        </div>
                                     </div>
                                 </div>
                             </li>
                         </ul>
+                        <div class="pagination">
+                            <div class="pagination__display">Страница 1 из 7</div>
+                            <div class="pagination__controls">
+                                <a href="" class="pagination__btn"> < </a> 
+                                <ul class="pagination__list">
+                                    <li class="pagination__item">
+                                        <a href="#" class="pagination__page pagination__page_active">1</a>
+                                    </li>
+                                    <li class="pagination__item">
+                                        <a href="#" class="pagination__page">2</a>
+                                    </li>
+                                    <li class="pagination__item">
+                                        <a href="#" class="pagination__page">3</a>
+                                    </li>
+                                    <li class="pagination__item">
+                                            <a href="#" class="pagination__page">4</a>
+                                    </li>
+                                    <li class="pagination__item">
+                                        <a href="#" class="pagination__page">5</a>
+                                    </li>
+                                    <li class="pagination__item">
+                                        <a href="#" class="pagination__page">6</a>
+                                    </li>
+                                    <li class="pagination__item">
+                                        <a href="#" class="pagination__page">7</a>                                        </li>
+                                </ul>
+                                <a href="" class="pagination__btn"> > </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -8,12 +8,12 @@
                 </li>
                 <li class="breadcrumbs__item">
                         <a href="#" class="breadcrumbs__item-link breadcrumbs__item-link--active">Еще крошка..</a>
-                </li>
+                </li>                               <!--    Модификатор класса breadcrumbs__item-link--active   -->
             </ul>
         
 
             /*  Хлебные крошки  */
-ul {        /*  Сброс стилей списка */
+ul {        /*  Сброс стилей списка.. можно добавить глобально  */
     margin: 0;
     padding: 0;
     list-style: none;
@@ -36,7 +36,7 @@ ul {        /*  Сброс стилей списка */
     opacity: .8;
 }
 
-.breadcrumbs__item:last-child:after {
+.breadcrumbs__item:last-child:after {   /*  убираем последний элемент   */
     display: none;
 }
 
