@@ -91,7 +91,21 @@ body {
 
  .nav {
     float: left;
-    width: 180px;
+    width: 199px;
+ }
+.nav__list {
+    margin-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.nav__item {
+    padding-bottom: 32px;
+}
+
+ .nav__icon {
+    display: inline-block;
+    vertical-align: middle;
  }
 
 .nav__text {
@@ -103,40 +117,41 @@ body {
     text-transform: uppercase;
 }
 
-.nav__link:hover .nav__text, .nav__link-active .nav__text{
+.nav__icon_main {
+    background: url('../img/icon/navigation/main_icon_hover.png') 0 0 no-repeat;
+    width: 17px;
+    height: 18px;
+    margin-right: 20px;
+}
+
+.nav__icon_feed {
+    background: url('../img/icon/navigation/feed_icon.png') 0 0 no-repeat;
+    width: 20px;
+    height: 18px;
+    margin-right: 17px;
+}
+
+.nav__icon_team {
+    background: url('../img/icon/navigation/team_icon.png') 0 0 no-repeat;
+    width: 23px;
+    height: 18px;
+    margin-right: 16px;
+}
+
+.nav__link:hover .nav__text, .nav__link_active .nav__text{
     color: #221f1f;
 }
 
-.nav__link:hover .nav__icon {
-    background-image: url('../img/icon/navigation/main_icon1.png');
+.nav__link:hover .nav__icon_main, .nav__link_active .nav__icon_main {
+    background-image: url('../img/icon/navigation/main_icon_active.png');
 }
 
- .nav__icon {
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 10px;
- }
- 
-.nav__icon-main {
-    background: url('../img/icon/navigation/main_icon.png');
-    width: 17px;
-    height: 18px;
+.nav__link:hover .nav__icon_feed, .nav__link_active .nav__icon_feed {
+    background-image: url('../img/icon/navigation/feed_icon_active.png');
 }
 
-.nav__icon-feed {
-    background: url('../img/icon/navigation/feed_icon.png');
-    width: 20px;
-    height: 18px;
-}
-
-.nav__icon-team {
-    background: url('../img/icon/navigation/team_icon.png');
-    width: 23px;
-    height: 18px;
-}
-
-.nav__link {
-
+.nav__link:hover .nav__icon_team, .nav__link_active .nav__icon_team {
+    background-image: url('../img/icon/navigation/team_icon_active.png');
 }
 
 .latest-news__foto, .latest-news__foto-pic {    /* Изменяет форму картинки */
